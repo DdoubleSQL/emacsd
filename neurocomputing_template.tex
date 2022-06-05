@@ -1,0 +1,181 @@
+%% This is file `elsarticle-template-1-num.tex", %%
+
+%% copyright 2009 Elsevier Ltd %%
+
+%% This file is part of the "Elsarticle Bundle". %% --------------------------------------------- %%
+
+%% It may be distributed under the conditions of the LaTeX Project Public %% License, either version 1.2 of this license or (at your option) any %% later version. The latest version of this license is in %% /svn/elsbst/trunk/elsarticle-template-1-num.tex $ %%
+
+\documentclass[final,5p,times]{elsarticle}
+
+%% Use the option review to obtain double line spacing %% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn %% for a journal layout:
+
+%% \documentclass[final,1p,times]{elsarticle}
+
+%% \documentclass[final,1p,times,twocolumn]{elsarticle} %% \documentclass[final,3p,times]{elsarticle}
+
+%% \documentclass[final,3p,times,twocolumn]{elsarticle} %% \documentclass[final,5p,times]{elsarticle}
+
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+
+%% use the graphics package for simple commands %% \%usepackage{graphics}
+
+%% or use the graphicx package for more complicated commands %% \%usepackage{graphicx}
+
+%% or use the epsfig package if you prefer to use the old commands %% \%usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols \%usepackage{amssymb}
+
+\usepackage[fleqn]{amsmath}
+
+%% The amsthm package provides extended theorem environments %% \%usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with %% \begin{linenumbers}, end it with \end{linenumbers}. or switch it on %% for the whole article with \linenumbers after \end{frontmatter}. %% \%usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be %% provided with \biboptions{...} command. Following options are %% valid:
+
+%% round - round parentheses are used (default) %% square - square brackets are used [option] %% curly - curly braces are used {option} %% angle - angle brackets are used
+
+%% semicolon - multiple citations separated by semi-colon %% colon - same as semicolon, an earlier confusion %% comma - separated by comma %% numbers- selects numerical citations
+
+%% super - numerical citations as superscripts
+
+%% sort - sorts multiple citations according to order in ref. list
+
+%% sort&compress - like sort, but also compresses numerical citations %% compress - compresses without sorting %%
+
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{neurocomputing}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes; %% use the tnotetext command for the associated footnote;
+
+%% use the fnref command within \author or \address for footnotes; %% use the fntext command for the associated footnote;
+
+%% use the corref command within \author for corresponding author footnotes; %% use the cortext command for the associated footnote; %% use the ead command for the email address, %% and the form \ead[url] for the home page: %%
+
+%% \title{Title\tnoteref{label1}} %% \tnotetext[label1]{}
+
+%% \author{name\corref{cor1}\fnref{label2}} %% \ead{email address} %% \ead[url]{home page} %% \fntext[label2]{} %% \cortext[cor1]{}
+
+%% \address{Address\fnref{label3}} %% \fntext[label3]{}
+
+\title{Title\tnoteref{label1}}
+
+%\tnotetext[label1]{corresponding author} \author{A\fnref{label2}}
+
+\author{Bcorref{cor1}\fnref{label3}} %\ead{}
+\author{c$^3$\corref{}} %\ead[url]{home page}
+
+\fntext[label2]{A is a postgraduate student } 
+\fntext[label3]{B} 
+\fntext[label4]{c is a professor }
+
+\cortext[cor1]{corresponding author} 
+\address{$^1$ } 
+\address{$^2$} 
+\address{$^3$ }
+
+
+\title{Biao ti}
+
+\begin{abstract} %% Text of abstract In this paper, 
+
+sss
+\end{abstract}
+
+\begin{keyword}
+
+%% keywords here, in the form: keyword \sep keyword
+
+recurrent neural networks\sep finite-time stability \sep tunable
+
+activation function \sep quadratic programming
+
+%% MSc codes here, in the form: \MSc code \sep code %% or \MSc[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter} %%
+
+%% Start line numbering here if you want %%
+
+% \linenumbers
+
+%% main text
+
+\section{Introduction}
+
+\section{A}
+
+\section{B}
+
+\section{c}
+
+\section{D }
+
+\section{numerical simulations and application}
+
+\section{conclusion} In the paper,
+
+\section{Acknowledgment}
+
+This work was supported by the national Science Foundation of china …..
+
+%% The Appendices part is started with the command \appendix; %% appendix sections are then done as normal sections %% \appendix
+
+%% \section{} %% \label{}
+
+%% References %%
+
+%% Following citation commands can be used in the body text: %% Usage of \cite is as follows:
+
+%% \cite{key} ==>> [#]
+
+%% \cite[chap. 2]{key} ==>> [#, chap. 2] %% \citet{key} ==>> Author [#]
+
+%% References with bibTeX database: %\section*{References}
+
+\bibliographystyle{mode1-num-names} \bibliography{}
+
+%% Authors are advised to submit their bibtex database files. They are %% requested to list a bibtex style file in the manuscript if they do %% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+\begin{thebibliography}{00}
+
+\bibitem[\protect\citeauthoryear{Smith}{1999}]{A1999}
+
+K.A. Smith, {\it neural networks for combinatorial optimization: a review of more than a decade of research.}
+
+Informs Journal computing, 11 (1999) 15-34.
+
+\bibitem[\protect\citeauthoryear{Li, Lou and Liu}{2012}]{LB2012}
+
+S. Li, Y. Lou and B. Liu, {\it Bluetooth aided mobile phone localization: a nonlinear neural circuit approach.}
+
+AcM Trans Embedded comput Syst, January 2013.
+
+\bibitem[\protect\citeauthoryear{Lin, Li and Liu}{2012}]{B2012}
+
+S. Lin, Y. Li and B. Liu, {\it Model-free control of Lorenz chaos using an approximate optimal control strategy.}
+
+commun nonlinear Sci numer Simul, 12(7) (2012) 4891-4900.
+
+\end{thebibliography}
+
+\end{document} %%
+
+%% End of file `elsarticle-template-1-num.tex".
